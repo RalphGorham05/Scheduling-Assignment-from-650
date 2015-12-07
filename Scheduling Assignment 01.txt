@@ -1,0 +1,34 @@
+CS 451/650                                                     Fall 2014
+Scheduling Simulation                         
+
+
+You are to write an application that will allow us to simulate various 
+scheduling algorithms. In order to test our simulation the data file 
+"Simulation1-Data.txt" has been prepared.  The file contains a number of 
+lines of data.  Each line contains information about a process and has 
+the following format:
+
+processID processArriavalTime processServiceTime
+
+For this assignment we will assume that our system contains one processor,
+and the ready processes are scheduled using a first in first our (FIFO)
+strategy.
+
+The simulator should maintain:
+1. a list of the processes that are in the ready state.
+2. a list of the processes that have completed.
+3. a list of the process(es) that are currently running.
+4. a clock to keep track of the current time.
+
+Your simulator should use separate threads to manage the clock, entry of
+jobs into the system, and the scheduling of processes.
+
+Your simulation should allow us to determine:
+1. the time when each process will finish
+2. the amount of time that each process spends on the ready list
+3. the total time and average time that all processes spend on the ready list.
+4. the time when all processes will finish.
+
+
+Assignment is due on 10-22-2014
+
