@@ -5,7 +5,19 @@ class PCB:
 		self.pAT = at
 
 
+with open('Simulation1-data.txt','r') as data:
+	lines = [line.split() for line in data]
 
-p = PCB(1,30, 50)
-print p.pST
-print p.pAT
+
+lines = [[int(e) for e in line] for line in lines]
+
+
+
+processes = []
+for line in lines:
+	pcb = PCB(line[0],line[1],line[2])
+	processes.append(pcb)
+
+
+
+
